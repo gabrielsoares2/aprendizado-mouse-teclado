@@ -1,0 +1,12 @@
+#alvo{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+}
+
+#area_jogo {
+    position: relative; /* Necessário para posicionar a imagem dentro dessa área */
+    width: auto; /* Largura da área do jogo */
+    height: auto; /* Altura da área do jogo */
+    overflow: hidden; /* Impede que a imagem saia da área do jogo */
+}

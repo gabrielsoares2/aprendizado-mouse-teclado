@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.destaque {
+    color: yellow;
+}
+
+.tutorial_imagem {
+    height: 300px;
+    width: 500px;
+}
+
+.cabecalho_tutorial {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.conteudo_tutorial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 305px;
+}
+
+.conteudo_tutorial_texto {
+    font-size: 22px;
+}
+
+.conteudo_tutorial_cliques {
+    width: 500px;
+    height: 305px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo_clique {
+    height: 100px;
+    width: 100px;
+}
+
+#div1 {
+    background-color: lightgreen;
+}
+
+#div2 {
+    background-color: lightblue;
+}
+
+#div1,
+#div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaDeTexto {
+    height: 200px;
+    width: 250px;
+    resize: none;
+}
+
+.botoes-voltar-continuar {
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    color: white;
+    background-color: green;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.botoes-voltar-continuar:hover {
+    background-color: white;
+    color: green;
+}
+
+.voltar-continuar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.noselect {
+    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
