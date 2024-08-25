@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+
+    --font-titulo: "Montserrat", sans-serif;
+    --font-texto: "Open Sans", sans-serif;
+    --font-botao: "Nunito", sans-serif;
+
+    --cor-de-fundo: #F2F2F2;
+    --cor-de-titulo: #003366;
+    --cor-de-texto: #000000;
+    --cor-do-botao: #0099FF;
+    --cor-do-botao-hover: #007ACC;
+    --cor-da-fonte-botao: #000000;
+    --cor-da-fonte-botao-hover: #FFFFFF;
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +35,9 @@
     justify-content: center;
     gap: 30px;
     min-height: 100vh;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-texto);
+    font-family: var(--font-texto);
 }
 
 .conteudo_principal_selecao {
@@ -23,6 +46,9 @@
     justify-content: center;
     align-items: center;
     gap: 200px;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-de-texto);
+    font-family: var(--font-texto);
 }
 
 .conteudo_selecao_jogos{
@@ -42,7 +68,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightblue;
 }
 
 .cabecalho_menu_titulo {
@@ -56,7 +81,6 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    background-color: aqua;
 }
 
 .conteudo_menu_botoes {
@@ -67,23 +91,35 @@
 }
 
 .botoes_telaInicial {
-    background-color: black;
-    color: white;
     height: 50px;
     width: 160px;
     font-size: 35px;
-    border-radius: 0px;
+    cursor: pointer;
     transition: border-radius 0.3s ease, background-color 0.3s ease;
 }
 
 .botoes_telaInicial:hover {
-    color: black;
-    background-color: white;
     border-radius: 10px;
+    background-color: var(--cor-do-botao-hover);
+    color: var(--cor-da-fonte-botao-hover);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .botao-voltar-selecao {
     text-align: left;
+}
+
+#jogo-alvo {
+    font-size: 25px;
+    cursor: pointer;
+    transition: border-radius 0.3s ease, background-color 0.3s ease;
+}
+
+#jogo-alvo:hover {
+    border-radius: 10px;
+    background-color: var(--cor-do-botao-hover);
+    color: var(--cor-da-fonte-botao-hover);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .rodape {
@@ -95,4 +131,14 @@
 	width: 100%;
     position: fixed;
     bottom: 0;
+}
+
+h1 {
+    color: var(--cor-de-titulo);
+    font-family: var(--font-titulo);
+}
+
+button {
+    background-color: var(--cor-do-botao);
+    font-family: var(--font-botao);
 }

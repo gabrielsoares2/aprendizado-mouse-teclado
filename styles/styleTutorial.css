@@ -9,7 +9,7 @@ body {
 }
 
 .destaque {
-    color: yellow;
+    color: #3880c9;
 }
 
 .tutorial_imagem {
@@ -41,16 +41,18 @@ body {
 .conteudo_tutorial_cliques {
     width: 500px;
     height: 305px;
-    background-color: blueviolet;
+    background-color: #003366;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
 .conteudo_clique {
     height: 100px;
     width: 100px;
+    border-radius: 10px;
 }
 
 #div1 {
@@ -78,14 +80,15 @@ body {
     height: 40px;
     width: 200px;
     font-size: 15px;
-    color: white;
-    background-color: green;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    transition: border-radius 0.3s ease, background-color 0.3s ease;
 }
 
 .botoes-voltar-continuar:hover {
-    background-color: white;
-    color: green;
+    border-radius: 10px;
+    background-color: #007ACC;
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .voltar-continuar {
