@@ -35,10 +35,10 @@
 
     <script src="script/main.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js"></script>
+    <script type="module">
 
-    <script>
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyBjvvGUK8rnxMJyiFw8iMCOlyli4235HBI",
