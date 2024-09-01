@@ -1,6 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    box-sizing: border-box;
+}
+
 #alvo{
-    height: 70px;
-    width: 70px;
+    height: 4.375rem;
+    width: 4.375rem;
     position: absolute;
 }
 

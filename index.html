@@ -34,5 +34,26 @@
     </footer>
 
     <script src="script/main.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js"></script>
+
+    <script>
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBjvvGUK8rnxMJyiFw8iMCOlyli4235HBI",
+            authDomain: "mouse-teclado.firebaseapp.com",
+            projectId: "mouse-teclado",
+            storageBucket: "mouse-teclado.appspot.com",
+            messagingSenderId: "269772062074",
+            appId: "1:269772062074:web:8e7bfab9730363a85eaac3",
+            measurementId: "G-CYQ25H1KC9"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+    </script>
+
 </body>
 </html>
