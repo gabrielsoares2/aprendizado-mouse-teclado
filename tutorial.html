@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleTutorial.css">
     <title>Introdução</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1725326623031623"
+     crossorigin="anonymous"></script>
 </head>
 <body class="conteudo_principal">
     
@@ -39,5 +41,25 @@
     </footer>
 
     <script src="script/main.js"></script>
+
+    <script type="module">
+
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBjvvGUK8rnxMJyiFw8iMCOlyli4235HBI",
+            authDomain: "mouse-teclado.firebaseapp.com",
+            projectId: "mouse-teclado",
+            storageBucket: "mouse-teclado.appspot.com",
+            messagingSenderId: "269772062074",
+            appId: "1:269772062074:web:8e7bfab9730363a85eaac3",
+            measurementId: "G-CYQ25H1KC9"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+    </script>
 </body>
 </html>
