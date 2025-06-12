@@ -1,6 +1,8 @@
 let alvo = document.getElementById("alvo");
 let areaDoAlvo = document.getElementById("area_jogo");
 let points = 0
+let obj = document.getElementById("objetivo");
+
 
 function posicionarAlvo(){
 
@@ -27,10 +29,17 @@ document.addEventListener("DOMContentLoaded", function(){
 function acertou(){
 
     let pontuacao = document.getElementById("pontos");
+    let objetivo = parseInt(obj.value) || 15;
 
     points += 1;
 
     pontuacao.innerHTML = points;
+
+    if (points == objetivo) {
+        pontuacao.textContent = "Você ganhou!";
+        alvo.style.display = "none";
+        return;
+    };
 
     posicionarAlvo();
 
