@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
 function acertou(){
 
     let pontuacao = document.getElementById("pontos");
-    let objetivo = parseInt(obj.value) || 50;
+    let objetivo = parseInt(obj.value) || 100;
 
     points += 1;
 
