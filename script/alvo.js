@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     posicionarAlvo();
 
-    setInterval(posicionarAlvo, 5000);
+    setInterval(posicionarAlvo, 2000);
 
 });
 
